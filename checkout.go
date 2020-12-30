@@ -11,6 +11,10 @@ type Checkout struct {
 }
 
 //NewCheckout create Checkout
-func NewCheckout() {
-
+func NewCheckout(shopID int, securityToken, oauthToken string) *Checkout {
+	return &Checkout{
+		ShopID:        shopID,
+		SecurityToken: securityToken,
+		OAuthToken:    oauthToken,
+	}
 }
