@@ -226,4 +226,10 @@ type PaymentMethod struct {
 	Saved bool   `json:"saved"`
 	Title string `json:"title,omitempty"`
 	Login string `json:"login,omitempty"`
+	Card  Card   `json:"card,omitempty"`
+}
+
+//Card is
+//https://yookassa.ru/developers/api#payment_object_payment_method_bank_card_card
+type Card struct {
 }
