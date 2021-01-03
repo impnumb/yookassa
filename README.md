@@ -1,1 +1,1 @@
-# yookassa-sdk-go
+# yookassa
