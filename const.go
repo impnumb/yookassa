@@ -209,6 +209,7 @@ const (
 	MobileBalance = "mobile_balance"
 	Cash          = "cash"
 	Installments  = "installments"
+	WeChat        = "wechat"
 )
 
 //Card types
@@ -476,4 +477,21 @@ const (
 	ZA = "ZA"
 	ZM = "ZM"
 	ZW = "ZW"
+)
+
+//VAT types
+//https://yookassa.ru/developers/api?lang=bash#payment_object_payment_method_b2b_sberbank_vat_data_calculated_type
+const (
+	Untaxed    = "untaxed"
+	Calculated = "calculated"
+	Mixed      = "mixed"
+)
+
+//Rate types
+//https://yookassa.ru/developers/api?lang=bash#payment_object_payment_method_b2b_sberbank_vat_data_calculated_rate
+const (
+	Rate7  = "7"
+	Rate10 = "10"
+	Rate18 = "18"
+	Rate20 = "20"
 )
