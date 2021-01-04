@@ -1,5 +1,7 @@
 package yookassa
 
+import "time"
+
 //Payment is
 //https://yookassa.ru/developers/api#payment_object
 type Payment struct {
@@ -10,6 +12,8 @@ type Payment struct {
 	Description   string         `json:"description,omitempty"`
 	Recipient     *Recipient     `json:"recipient,omitempty"`
 	PaymentMethod *PaymentMethod `json:"payment_method,omitempty"`
+	CapturedAt    *time.Time     `json:"captured_at,string,omitempty"`
+	CreatedAt     *time.Time     `json:"created_at,string"`
 }
 
 //Amount is
